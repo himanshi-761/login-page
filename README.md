@@ -2,4 +2,4 @@
 
 not mine.
 
-![Page](./assets/images/background.png?raw=true "Page")
+![Page](./src/assets/images/background.png?raw=true "Page")
