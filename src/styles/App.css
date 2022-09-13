@@ -44,6 +44,14 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem 0;
+  cursor: context-menu;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-container .login .login-text:hover {
+  -webkit-box-shadow: rgba(51, 51, 211, 0.25) 0px 50px 100px -20px, rgba(87, 85, 255, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(51, 51, 211, 0.25) 0px 50px 100px -20px, rgba(87, 85, 255, 0.3) 0px 30px 60px -30px;
 }
 
 .login-container .login .login-text .title {
@@ -74,15 +82,12 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 0.2rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   border-bottom: 1px solid #005de0;
   cursor: pointer;
 }
 
 .login-container .login .login-text .title-btn:hover {
-  border-bottom: 1px solid #fff;
+  color: yellow;
 }
 
 .login-container .login .login-form {
@@ -101,6 +106,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-container .login .login-form:hover {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .login-container .login .login-form .login-header {
@@ -160,6 +172,10 @@
   padding: 1rem 1rem;
   border-radius: 0.8rem;
   border: 1px solid #efefef;
+}
+
+.login-container .login .login-form .form-container .form-field:hover {
+  background: #fafaff;
 }
 
 .login-container .login .login-form .form-container .form-field input {

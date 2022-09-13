@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const LoginPage = () => {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+
     return (
         <div className='login-container'>
             <div className='login'>
@@ -37,10 +41,14 @@ const LoginPage = () => {
                             or
                         </div>
                         <div className='form-field'>
-                            <input type='email' placeholder='example@gmail.com' />
+                            <input type='email' placeholder='example@gmail.com'
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
                         </div>
                         <div className='form-field'>
-                            <input type='password' placeholder='password' />
+                            <input type='password' placeholder='password'
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
                         </div>
                         <div className='login-btn'>
                             Login
