@@ -4,14 +4,14 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth"
 import { getAnalytics } from "firebase/analytics"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBJSzKKLVEZAOwSolHtR-u-x6N-HCVsv2c",
-    authDomain: "login-page-92030.firebaseapp.com",
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
     databaseURL: "https://login-page-92030-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "login-page-92030",
-    storageBucket: "login-page-92030.appspot.com",
-    messagingSenderId: "754679709402",
-    appId: "1:754679709402:web:f654ce434c7744def6efe3",
-    measurementId: "G-D628K7HHCV"
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID,
+    measurementId: process.env.MEASUREMENT_ID
 }
 
 const app = initializeApp(firebaseConfig)
